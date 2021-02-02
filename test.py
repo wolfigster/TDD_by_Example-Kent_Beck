@@ -6,6 +6,7 @@ class TestCase:
         method = getattr(self, self.name)
         method()
 
+
 class WasRun(TestCase):
     def __init__(self, name):
         self.wasRun = None
@@ -14,11 +15,13 @@ class WasRun(TestCase):
     def testMethod(self):
         self.wasRun = 1
 
+
 class TestCaseTest(TestCase):
     def testRunning(self):
         test = WasRun("testMethod")
-        assert(not test.wasRun)
+        assert (not test.wasRun)
         test.run()
-        assert(test.wasRun)
+        assert (test.wasRun)
+
 
 TestCaseTest("testRunning").run()
