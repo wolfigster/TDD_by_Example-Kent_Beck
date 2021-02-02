@@ -15,6 +15,11 @@ class TestCase:
         pass
 
 
+class TestResult:
+    def summary(self):
+        return "1 run, 0 failed"
+
+
 class WasRun(TestCase):
     def __init__(self, name):
         self.wasRun = None
