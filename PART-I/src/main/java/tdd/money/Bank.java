@@ -15,4 +15,8 @@ public class Bank {
                 ? 2
                 : 1;
     }
+
+    void addRate(String from, String to, int rate) {
+        rates.put(new Pair(from, to), new Integer(rate));
+    }
 }
