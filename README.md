@@ -1,4 +1,4 @@
-# TDD by Example | Kent Beck
+# Test Driven Development
 
 [Test-Driven Development by Example](https://www.amazon.de/Test-Driven-Development-Example-Signature/dp/0321146530)
 
